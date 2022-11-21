@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<!-- 
+Name: Mark Holber/UML CS/mark_holber@student.uml.edu
+Date: 10-25-2022
+File:index.html
+Description: Validation and modifications using jquery 
+-->
+
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+
+    <title>First Website</title>
+
+     <!--Links to import-->
+
+    <link rel="stylesheet" href="CSS/style.css" > 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.1/additional-methods.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" > 
+
+
+    <script src="Javascript/script.js"></script>
+
+        
+  </head>
+
+<body> 
+    <div id="wrapper">
+        <header> 
+            <h1> Table</h1>
+        </header>   
+        
+        <h2> Please input number of rows and columns from -50 to 50.</h2>
+        <br>
+       <!--min="-50" max="50" required-->
+
+
+        <!--Table form input-->
+        <form name="inputs" id="form1" action="/action_page.php">
+
+        <p id = "p1">Enter column minimum: </p> 
+        <input type="number" name="xMin" id="xMin">
+        <br>
+        <p>Enter column maximum: </p> 
+        <input type="number" name="xMax" id="xMax">
+        <br>
+        <p id = "p3">Enter row minimum: </p> 
+        <input type="number" name="yMin" id="yMin">
+        <br>
+        <p>Enter row maximum: </p> 
+        <input type="number" name="yMax" id="yMax">
+        <br>
+        <br>
+
+        <input name="Make Table" type = "button" value="Make Table" onclick = "validate()">
+      
+        <!--<input name="Make Table" type = "button" value="Save" onclick = "save()">-->
+        </form>
+
+        <p id = "output5"></p>
+
+
+         <!--table output-->
+        <div id ="t1">
+         <p> Please insert desired values in chart and press 'Make Table'</p>       
+        </div>
+
+        <br><br>
+        
+    </div>
+
+    <!--<div id ="tabs">
+        <p> tabs</p>
+    </div>-->
+
+
+     
+
+
+</body>
